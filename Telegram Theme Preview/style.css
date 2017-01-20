@@ -10,6 +10,10 @@
     font-family: OpenSans-Regular;
     src: url(OpenSans-Regular.ttf);
 }
+h2
+{
+  font-family: OpenSans-Bold;
+}
 .tdesktop
 {
   height: 571px;
@@ -136,24 +140,11 @@
   left: 7px;
   position: relative;
 }
-/*.windowBoldFg
-{
-  line-height: 46px;
-  font-family: OpenSans-Regular;
-  font-size: 13pt;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: default;
-}*/
 .windowBoldFg
 {
   line-height: 46px;
   font-family: OpenSans-Regular;
-  font-size: 13pt;
+  font-size: 11pt;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -173,17 +164,6 @@
   width: 274px;
   height: 140px;
 }
-/*.menuIconFg
-{
-  line-height: 46px;
-  float: left;
-  padding-right: 26px;
-  padding-left: 29px;
-  width: 22px;
-  height: 22px;
-  position: relative;
-  top: 12px;
-}*/
 .menuIconFg
 {
     line-height: 46px;
@@ -254,4 +234,31 @@
   -ms-user-select: none;
   user-select: none;
   cursor: pointer;
+}
+.windowSubTextFg
+{
+  position: relative;
+  left: 30px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.windowSubTextFg[name=TDesktop]
+{
+  top: 101px;
+  font-family: OpenSans-Semibold;
+  font-size: 10pt;
+  cursor: pointer;
+  width: 117px;
+}
+.windowSubTextFg[name=About]
+{
+  top: 104px;
+  font-family: OpenSans-Regular;
+  font-size: 10pt;
+  cursor: pointer;
+  width: 130px;
 }
