@@ -1,0 +1,6 @@
+C:\Users\sondo\Documents\SharpDevelop Projects\CSS to Colors\CSS to Colors\obj\Debug\CSS to Colors.csprojResolveAssemblyReference.cache
+C:\Users\sondo\Documents\SharpDevelop Projects\CSS to Colors\CSS to Colors\bin\Debug\csstoc.exe.config
+C:\Users\sondo\Documents\SharpDevelop Projects\CSS to Colors\CSS to Colors\bin\Debug\csstoc.exe
+C:\Users\sondo\Documents\SharpDevelop Projects\CSS to Colors\CSS to Colors\bin\Debug\csstoc.pdb
+C:\Users\sondo\Documents\SharpDevelop Projects\CSS to Colors\CSS to Colors\obj\Debug\csstoc.exe
+C:\Users\sondo\Documents\SharpDevelop Projects\CSS to Colors\CSS to Colors\obj\Debug\csstoc.pdb

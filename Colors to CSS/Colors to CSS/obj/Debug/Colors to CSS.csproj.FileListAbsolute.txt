@@ -1,0 +1,6 @@
+C:\Users\sondo\Documents\SharpDevelop Projects\Colors to CSS\Colors to CSS\obj\Debug\Colors to CSS.csprojResolveAssemblyReference.cache
+C:\Users\sondo\Documents\SharpDevelop Projects\Colors to CSS\Colors to CSS\bin\Debug\ctocss.exe.config
+C:\Users\sondo\Documents\SharpDevelop Projects\Colors to CSS\Colors to CSS\bin\Debug\ctocss.exe
+C:\Users\sondo\Documents\SharpDevelop Projects\Colors to CSS\Colors to CSS\bin\Debug\ctocss.pdb
+C:\Users\sondo\Documents\SharpDevelop Projects\Colors to CSS\Colors to CSS\obj\Debug\ctocss.exe
+C:\Users\sondo\Documents\SharpDevelop Projects\Colors to CSS\Colors to CSS\obj\Debug\ctocss.pdb
