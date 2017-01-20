@@ -1,0 +1,1 @@
+csstoc.exe "colors.css" "colors.tdesktop-theme"

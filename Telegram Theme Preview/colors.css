@@ -1,0 +1,1568 @@
+.windowBg
+{
+	background-color : #ffffff;
+}
+.windowFg
+{
+	color : #000000;
+}
+.windowBg:hover
+{
+	background-color : #f1f1f1;
+}
+.windowBg:active
+{
+	background-color : #e5e5e5;
+}
+.windowFg:hover
+{
+	color : #000000;
+}
+.windowSubTextFg
+{
+	color : #999999;
+}
+.windowSubTextFg:hover
+{
+	color : #919191;
+}
+.windowBoldFg
+{
+	color : #222222;
+}
+.windowBoldFg:hover
+{
+	color : #222222;
+}
+.windowBg:focus
+{
+	background-color : #40a7e3;
+}
+.windowFg:focus
+{
+	color : #ffffff;
+}
+.windowActiveTextFg
+{
+	color : #168acd;
+}
+.windowShadowFg
+{
+	color : #000000;
+}
+.windowShadowFgFallback
+{
+	color : #f1f1f1;
+}
+.shadowFg
+{
+	color : rgba(0, 0, 0, 0.0941176470588235);
+}
+.slideFadeOutBg
+{
+	background-color : rgba(0, 0, 0, 0.235294117647059);
+}
+.slideFadeOutShadowFg
+{
+	color : #000000;
+}
+.imageBg
+{
+	background-color : #000000;
+}
+.imageBgTransparent
+{
+	background-color : #ffffff;
+}
+.activeButtonBg
+{
+	background-color : #40a7e3;
+}
+.activeButtonBg:hover
+{
+	background-color : #39a5db;
+}
+.activeButtonBg:active
+{
+	background-color : #2095d0;
+}
+.activeButtonFg
+{
+	color : #ffffff;
+}
+.activeButtonFg:hover
+{
+	color : #ffffff;
+}
+.activeButtonSecondaryFg
+{
+	color : #cceeff;
+}
+.activeButtonSecondaryFg:hover
+{
+	color : #cceeff;
+}
+.activeLineFg
+{
+	color : #37a1de;
+}
+.activeLineFgError
+{
+	color : #e48383;
+}
+.lightButtonBg
+{
+	background-color : #ffffff;
+}
+.lightButtonBg:hover
+{
+	background-color : #e3f1fa;
+}
+.lightButtonBg:active
+{
+	background-color : #c9e4f6;
+}
+.lightButtonFg
+{
+	color : #168acd;
+}
+.lightButtonFg:hover
+{
+	color : #168acd;
+}
+.attentionButtonFg
+{
+	color : #d14e4e;
+}
+.attentionButtonFg:hover
+{
+	color : #d14e4e;
+}
+.attentionButtonBg:hover
+{
+	background-color : #fcdfde;
+}
+.attentionButtonBg:active
+{
+	background-color : #f4c3c2;
+}
+.outlineButtonBg
+{
+	background-color : #ffffff;
+}
+.outlineButtonBg:hover
+{
+	background-color : #e3f1fa;
+}
+.outlineButtonOutlineFg
+{
+	color : #40a7e3;
+}
+.outlineButtonBg:active
+{
+	background-color : #c9e4f6;
+}
+.menuBg
+{
+	background-color : #ffffff;
+}
+.menuBg:hover
+{
+	background-color : #f1f1f1;
+}
+.menuBg:active
+{
+	background-color : #e5e5e5;
+}
+.menuIconFg
+{
+	color : #a8a8a8;
+}
+.menuIconFg:hover
+{
+	color : #999999;
+}
+.menuSubmenuArrowFg
+{
+	color : #373737;
+}
+.menuFgDisabled
+{
+	color : #cccccc;
+}
+.menuSeparatorFg
+{
+	color : #f1f1f1;
+}
+.scrollBarBg
+{
+	background-color : rgba(0, 0, 0, 0.325490196078431);
+}
+.scrollBarBg:hover
+{
+	background-color : rgba(0, 0, 0, 0.47843137254902);
+}
+.scrollBg
+{
+	background-color : rgba(0, 0, 0, 0.101960784313725);
+}
+.scrollBg:hover
+{
+	background-color : rgba(0, 0, 0, 0.172549019607843);
+}
+.smallCloseIconFg
+{
+	color : #c7c7c7;
+}
+.smallCloseIconFg:hover
+{
+	color : #a3a3a3;
+}
+.radialFg
+{
+	color : #ffffff;
+}
+.radialBg
+{
+	background-color : rgba(0, 0, 0, 0.337254901960784);
+}
+.placeholderFg
+{
+	color : #999999;
+}
+.placeholderFg:focus
+{
+	color : #aaaaaa;
+}
+.inputBorderFg
+{
+	color : #e0e0e0;
+}
+.filterInputBorderFg
+{
+	color : #54c3f3;
+}
+.filterInputInactiveBg
+{
+	background-color : #f1f1f1;
+}
+.checkboxFg
+{
+	color : #b3b3b3;
+}
+.sliderBg:disabled
+{
+	background-color : #e1eaef;
+}
+.sliderBg:focus
+{
+	background-color : #40a7e3;
+}
+.tooltipBg
+{
+	background-color : #eef2f5;
+}
+.tooltipFg
+{
+	color : #5d6c80;
+}
+.tooltipBorderFg
+{
+	color : #c9d1db;
+}
+.titleShadow
+{
+	background-color : rgba(0, 0, 0, 0.0117647058823529);
+}
+.titleBg
+{
+	background-color : #f1f1f1;
+}
+.titleBg:focus
+{
+	background-color : #f1f1f1;
+}
+.titleButtonBg
+{
+	background-color : #f1f1f1;
+}
+.titleButtonFg
+{
+	color : #ababab;
+}
+.titleButtonBg:hover
+{
+	background-color : #e5e5e5;
+}
+.titleButtonFg:hover
+{
+	color : #9a9a9a;
+}
+.titleButtonBg:focus
+{
+	background-color : #f1f1f1;
+}
+.titleButtonFg:focus
+{
+	color : #ababab;
+}
+.titleButtonBgActive:hover
+{
+	background-color : #e5e5e5;
+}
+.titleButtonFgActive:hover
+{
+	color : #9a9a9a;
+}
+.titleButtonCloseBg
+{
+	background-color : #f1f1f1;
+}
+.titleButtonCloseFg
+{
+	color : #ababab;
+}
+.titleButtonCloseBg:hover
+{
+	background-color : #e81123;
+}
+.titleButtonCloseFg:hover
+{
+	color : #ffffff;
+}
+.titleButtonCloseBg:focus
+{
+	background-color : #f1f1f1;
+}
+.titleButtonCloseFg:focus
+{
+	color : #ababab;
+}
+.titleButtonCloseBgActive:hover
+{
+	background-color : #e81123;
+}
+.titleButtonCloseFgActive:hover
+{
+	color : #ffffff;
+}
+.titleFg
+{
+	color : #acacac;
+}
+.titleFg:focus
+{
+	color : #3e3c3e;
+}
+.trayCounterBg
+{
+	background-color : #f23c34;
+}
+.trayCounterBgMute
+{
+	background-color : #888888;
+}
+.trayCounterFg
+{
+	color : #ffffff;
+}
+.trayCounterBgMacInvert
+{
+	background-color : #ffffff;
+}
+.trayCounterFgMacInvert
+{
+	color : rgba(255, 255, 255, 0.00392156862745098);
+}
+.layerBg
+{
+	background-color : rgba(0, 0, 0, 0.498039215686275);
+}
+.cancelIconFg
+{
+	color : #a8a8a8;
+}
+.cancelIconFg:hover
+{
+	color : #999999;
+}
+.boxBg
+{
+	background-color : #ffffff;
+}
+.boxTextFg
+{
+	color : #000000;
+}
+.boxTextFgGood
+{
+	color : #4ab44a;
+}
+.boxTextFgError
+{
+	color : #d84d4d;
+}
+.boxTitleFg
+{
+	color : #404040;
+}
+.boxSearchBg
+{
+	background-color : #ffffff;
+}
+.boxSearchCancelIconFg
+{
+	color : #a8a8a8;
+}
+.boxSearchCancelIconFg:hover
+{
+	color : #999999;
+}
+.boxTitleAdditionalFg
+{
+	color : #808080;
+}
+.boxTitleCloseFg
+{
+	color : #a8a8a8;
+}
+.boxTitleCloseFg:hover
+{
+	color : #999999;
+}
+.membersAboutLimitFg
+{
+	color : #919191;
+}
+.contactsBg
+{
+	background-color : #ffffff;
+}
+.contactsBg:hover
+{
+	background-color : #f1f1f1;
+}
+.contactsNameFg
+{
+	color : #000000;
+}
+.contactsStatusFg
+{
+	color : #999999;
+}
+.contactsStatusFg:hover
+{
+	color : #919191;
+}
+.contactsStatusFgOnline
+{
+	color : #168acd;
+}
+.photoCropFadeBg
+{
+	background-color : rgba(0, 0, 0, 0.498039215686275);
+}
+.photoCropPointFg
+{
+	color : rgba(255, 255, 255, 0.498039215686275);
+}
+.introBg
+{
+	background-color : #ffffff;
+}
+.introTitleFg
+{
+	color : #222222;
+}
+.introDescriptionFg
+{
+	color : #999999;
+}
+.introErrorFg
+{
+	color : #999999;
+}
+.introCoverTopBg
+{
+	background-color : #0f89d0;
+}
+.introCoverBottomBg
+{
+	background-color : #39b0f0;
+}
+.introCoverIconsFg
+{
+	color : #5ec6ff;
+}
+.introCoverPlaneTrace
+{
+	background-color : rgba(94, 198, 255, 0.411764705882353);
+}
+.introCoverPlaneInner
+{
+	background-color : #c6d8e8;
+}
+.introCoverPlaneOuter
+{
+	background-color : #a1bed4;
+}
+.introCoverPlaneTop
+{
+	background-color : #ffffff;
+}
+.dialogsMenuIconFg
+{
+	color : #a8a8a8;
+}
+.dialogsMenuIconFg:hover
+{
+	color : #999999;
+}
+.dialogsBg
+{
+	background-color : #ffffff;
+}
+.dialogsNameFg
+{
+	color : #222222;
+}
+.dialogsChatIconFg
+{
+	color : #222222;
+}
+.dialogsDateFg
+{
+	color : #999999;
+}
+.dialogsTextFg
+{
+	color : #999999;
+}
+.dialogsTextFgService
+{
+	color : #168acd;
+}
+.dialogsDraftFg
+{
+	color : #dd4b39;
+}
+.dialogsVerifiedIconBg
+{
+	background-color : #40a7e3;
+}
+.dialogsVerifiedIconFg
+{
+	color : #ffffff;
+}
+.dialogsSendingIconFg
+{
+	color : #c1c1c1;
+}
+.dialogsSentIconFg
+{
+	color : #5dc452;
+}
+.dialogsUnreadBg
+{
+	background-color : #40a7e3;
+}
+.dialogsUnreadBgMuted
+{
+	background-color : #bbbbbb;
+}
+.dialogsUnreadFg
+{
+	color : #ffffff;
+}
+.dialogsBg:hover
+{
+	background-color : #f1f1f1;
+}
+.dialogsNameFg:hover
+{
+	color : #222222;
+}
+.dialogsChatIconFg:hover
+{
+	color : #222222;
+}
+.dialogsDateFg:hover
+{
+	color : #919191;
+}
+.dialogsTextFg:hover
+{
+	color : #919191;
+}
+.dialogsTextFgService:hover
+{
+	color : #168acd;
+}
+.dialogsDraftFg:hover
+{
+	color : #dd4b39;
+}
+.dialogsVerifiedIconBg:hover
+{
+	background-color : #40a7e3;
+}
+.dialogsVerifiedIconFg:hover
+{
+	color : #ffffff;
+}
+.dialogsSendingIconFg:hover
+{
+	color : #c1c1c1;
+}
+.dialogsSentIconFg:hover
+{
+	color : #5dc452;
+}
+.dialogsUnreadBg:hover
+{
+	background-color : #40a7e3;
+}
+.dialogsUnreadBgMuted:hover
+{
+	background-color : #bbbbbb;
+}
+.dialogsUnreadFg:hover
+{
+	color : #ffffff;
+}
+.dialogsBg:focus
+{
+	background-color : #419fd9;
+}
+.dialogsNameFg:focus
+{
+	color : #ffffff;
+}
+.dialogsChatIconFg:focus
+{
+	color : #ffffff;
+}
+.dialogsDateFg:focus
+{
+	color : #ffffff;
+}
+.dialogsTextFg:focus
+{
+	color : #ffffff;
+}
+.dialogsTextFgService:focus
+{
+	color : #ffffff;
+}
+.dialogsDraftFg:focus
+{
+	color : #c6e1f7;
+}
+.dialogsVerifiedIconBg:focus
+{
+	background-color : #ffffff;
+}
+.dialogsVerifiedIconFg:focus
+{
+	color : #419fd9;
+}
+.dialogsSendingIconFg:focus
+{
+	color : rgba(255, 255, 255, 0.6);
+}
+.dialogsSentIconFg:focus
+{
+	color : #ffffff;
+}
+.dialogsUnreadBg:focus
+{
+	background-color : #ffffff;
+}
+.dialogsUnreadBgMuted:focus
+{
+	background-color : #c6e1f7;
+}
+.dialogsUnreadFg:focus
+{
+	color : #419fd9;
+}
+.dialogsForwardBg
+{
+	background-color : #419fd9;
+}
+.dialogsForwardFg
+{
+	color : #ffffff;
+}
+.searchedBarBg
+{
+	background-color : #f1f1f1;
+}
+.searchedBarBorder
+{
+	background-color : rgba(0, 0, 0, 0.0941176470588235);
+}
+.searchedBarFg
+{
+	color : #919191;
+}
+.topBarBg
+{
+	background-color : #ffffff;
+}
+.emojiPanBg
+{
+	background-color : #ffffff;
+}
+.emojiPanCategories
+{
+	background-color : #f7f7f7;
+}
+.emojiPanHeaderFg
+{
+	color : #999999;
+}
+.emojiPanHeaderBg
+{
+	background-color : rgba(255, 255, 255, 0.949019607843137);
+}
+.stickerPanDeleteBg
+{
+	background-color : rgba(0, 0, 0, 0.8);
+}
+.stickerPanDeleteFg
+{
+	color : #ffffff;
+}
+.stickerPreviewBg
+{
+	background-color : rgba(255, 255, 255, 0.690196078431373);
+}
+.historyTextInFg
+{
+	color : #000000;
+}
+.historyTextOutFg
+{
+	color : #000000;
+}
+.historyCaptionInFg
+{
+	color : #000000;
+}
+.historyCaptionOutFg
+{
+	color : #000000;
+}
+.historyFileNameInFg
+{
+	color : #000000;
+}
+.historyFileNameOutFg
+{
+	color : #000000;
+}
+.historyOutIconFg
+{
+	color : #5dc452;
+}
+.historyOutIconFgSelected
+{
+	color : #4da79f;
+}
+.historyIconFgInverted
+{
+	color : #ffffff;
+}
+.historySendingOutIconFg
+{
+	color : #98d292;
+}
+.historySendingInIconFg
+{
+	color : #a0adb5;
+}
+.historySendingInvertedIconFg
+{
+	color : rgba(255, 255, 255, 0.784313725490196);
+}
+.historySystemBg
+{
+	background-color : rgba(137, 160, 180, 0.498039215686275);
+}
+.historySystemBgSelected
+{
+	background-color : rgba(187, 200, 212, 0.635294117647059);
+}
+.historySystemFg
+{
+	color : #ffffff;
+}
+.historyUnreadBarBg
+{
+	background-color : #fcfbfa;
+}
+.historyUnreadBarBorder
+{
+	background-color : rgba(0, 0, 0, 0.0941176470588235);
+}
+.historyUnreadBarFg
+{
+	color : #538bb4;
+}
+.historyForwardChooseBg
+{
+	background-color : rgba(0, 0, 0, 0.298039215686275);
+}
+.historyForwardChooseFg
+{
+	color : #ffffff;
+}
+.historyPeer1NameFg
+{
+	color : #c03d33;
+}
+.historyPeer1UserpicBg
+{
+	background-color : #e17076;
+}
+.historyPeer2NameFg
+{
+	color : #4fad2d;
+}
+.historyPeer2UserpicBg
+{
+	background-color : #7bc862;
+}
+.historyPeer3NameFg
+{
+	color : #d09306;
+}
+.historyPeer3UserpicBg
+{
+	background-color : #e5ca77;
+}
+.historyPeer4NameFg
+{
+	color : #168acd;
+}
+.historyPeer4UserpicBg
+{
+	background-color : #65aadd;
+}
+.historyPeer5NameFg
+{
+	color : #8544d6;
+}
+.historyPeer5UserpicBg
+{
+	background-color : #a695e7;
+}
+.historyPeer6NameFg
+{
+	color : #cd4073;
+}
+.historyPeer6UserpicBg
+{
+	background-color : #ee7aae;
+}
+.historyPeer7NameFg
+{
+	color : #2996ad;
+}
+.historyPeer7UserpicBg
+{
+	background-color : #6ec9cb;
+}
+.historyPeer8NameFg
+{
+	color : #ce671b;
+}
+.historyPeer8UserpicBg
+{
+	background-color : #faa774;
+}
+.historyPeerUserpicFg
+{
+	color : #ffffff;
+}
+.historyScrollBarBg
+{
+	background-color : rgba(81, 124, 65, 0.47843137254902);
+}
+.historyScrollBarBg:hover
+{
+	background-color : rgba(81, 124, 65, 0.737254901960784);
+}
+.historyScrollBg
+{
+	background-color : rgba(81, 124, 65, 0.298039215686275);
+}
+.historyScrollBg:hover
+{
+	background-color : rgba(81, 124, 65, 0.419607843137255);
+}
+.msgInBg
+{
+	background-color : #ffffff;
+}
+.msgInBgSelected
+{
+	background-color : #c2dcf2;
+}
+.msgOutBg
+{
+	background-color : #effdde;
+}
+.msgOutBgSelected
+{
+	background-color : #b7dbdb;
+}
+.msgSelectOverlay
+{
+	background-color : rgba(53, 140, 212, 0.298039215686275);
+}
+.msgStickerOverlay
+{
+	background-color : rgba(53, 140, 212, 0.498039215686275);
+}
+.msgInServiceFg
+{
+	color : #168acd;
+}
+.msgInServiceFgSelected
+{
+	color : #168acd;
+}
+.msgOutServiceFg
+{
+	color : #3a8e26;
+}
+.msgOutServiceFgSelected
+{
+	color : #367570;
+}
+.msgInShadow
+{
+	background-color : rgba(116, 142, 162, 0.16078431372549);
+}
+.msgInShadowSelected
+{
+	background-color : rgba(84, 141, 187, 0.16078431372549);
+}
+.msgOutShadow
+{
+	background-color : rgba(58, 195, 71, 0.250980392156863);
+}
+.msgOutShadowSelected
+{
+	background-color : rgba(55, 167, 142, 0.250980392156863);
+}
+.msgInDateFg
+{
+	color : #a0acb6;
+}
+.msgInDateFgSelected
+{
+	color : #6a9cc5;
+}
+.msgOutDateFg
+{
+	color : #6cc264;
+}
+.msgOutDateFgSelected
+{
+	color : #50a79c;
+}
+.msgServiceFg
+{
+	color : #ffffff;
+}
+.msgServiceBg
+{
+	background-color : rgba(81, 124, 65, 0.498039215686275);
+}
+.msgServiceBgSelected
+{
+	background-color : rgba(150, 179, 139, 0.635294117647059);
+}
+.msgInReplyBarColor
+{
+	background-color : #37a1de;
+}
+.msgInReplyBarSelColor
+{
+	background-color : #37a1de;
+}
+.msgOutReplyBarColor
+{
+	background-color : #5dc452;
+}
+.msgOutReplyBarSelColor
+{
+	background-color : #4da79f;
+}
+.msgImgReplyBarColor
+{
+	background-color : #ffffff;
+}
+.msgInMonoFg
+{
+	color : #4e7391;
+}
+.msgOutMonoFg
+{
+	color : #469165;
+}
+.msgDateImgFg
+{
+	color : #ffffff;
+}
+.msgDateImgBg
+{
+	background-color : rgba(0, 0, 0, 0.329411764705882);
+}
+.msgDateImgBg:hover
+{
+	background-color : rgba(0, 0, 0, 0.454901960784314);
+}
+.msgDateImgBgSelected
+{
+	background-color : rgba(28, 74, 113, 0.529411764705882);
+}
+.msgFileThumbLinkInFg
+{
+	color : #168acd;
+}
+.msgFileThumbLinkInFgSelected
+{
+	color : #168acd;
+}
+.msgFileThumbLinkOutFg
+{
+	color : #5eba5b;
+}
+.msgFileThumbLinkOutFgSelected
+{
+	color : #31a298;
+}
+.msgFileInBg
+{
+	background-color : #40a7e3;
+}
+.msgFileInBg:hover
+{
+	background-color : #4eade3;
+}
+.msgFileInBgSelected
+{
+	background-color : #51a3d3;
+}
+.msgFileOutBg
+{
+	background-color : #78c67f;
+}
+.msgFileOutBg:hover
+{
+	background-color : #6bc272;
+}
+.msgFileOutBgSelected
+{
+	background-color : #5fb389;
+}
+.msgFile1Bg
+{
+	background-color : #72b1df;
+}
+.msgFile1BgDark
+{
+	background-color : #5c9ece;
+}
+.msgFile1Bg:hover
+{
+	background-color : #5294c4;
+}
+.msgFile1BgSelected
+{
+	background-color : #5099d0;
+}
+.msgFile2Bg
+{
+	background-color : #61b96e;
+}
+.msgFile2BgDark
+{
+	background-color : #4da859;
+}
+.msgFile2Bg:hover
+{
+	background-color : #44a050;
+}
+.msgFile2BgSelected
+{
+	background-color : #46a07e;
+}
+.msgFile3Bg
+{
+	background-color : #e47272;
+}
+.msgFile3BgDark
+{
+	background-color : #cd5b5e;
+}
+.msgFile3Bg:hover
+{
+	background-color : #c35154;
+}
+.msgFile3BgSelected
+{
+	background-color : #9f6a82;
+}
+.msgFile4Bg
+{
+	background-color : #efc274;
+}
+.msgFile4BgDark
+{
+	background-color : #e6a561;
+}
+.msgFile4Bg:hover
+{
+	background-color : #dc9c5a;
+}
+.msgFile4BgSelected
+{
+	background-color : #b19d84;
+}
+.historyFileInIconFg
+{
+	color : #ffffff;
+}
+.historyFileInIconFgSelected
+{
+	color : #c2dcf2;
+}
+.historyFileInRadialFg
+{
+	color : #ffffff;
+}
+.historyFileInRadialFgSelected
+{
+	color : #c2dcf2;
+}
+.historyFileOutIconFg
+{
+	color : #effdde;
+}
+.historyFileOutIconFgSelected
+{
+	color : #b7dbdb;
+}
+.historyFileOutRadialFg
+{
+	color : #effdde;
+}
+.historyFileOutRadialFgSelected
+{
+	color : #b7dbdb;
+}
+.historyFileThumbIconFg
+{
+	color : #ffffff;
+}
+.historyFileThumbIconFgSelected
+{
+	color : #c2dcf2;
+}
+.historyFileThumbRadialFg
+{
+	color : #ffffff;
+}
+.historyFileThumbRadialFgSelected
+{
+	color : #c2dcf2;
+}
+.msgWaveformIn:focus
+{
+	background-color : #40a7e3;
+}
+.msgWaveformInActiveSelected
+{
+	background-color : #51a3d3;
+}
+.msgWaveformIn:disabled
+{
+	background-color : #d4dee6;
+}
+.msgWaveformInInactiveSelected
+{
+	background-color : #9cc1e1;
+}
+.msgWaveformOut:focus
+{
+	background-color : #78c67f;
+}
+.msgWaveformOutActiveSelected
+{
+	background-color : #6badad;
+}
+.msgWaveformOut:disabled
+{
+	background-color : #b3e2b4;
+}
+.msgWaveformOutInactiveSelected
+{
+	background-color : #91c3c3;
+}
+.msgBotKbOverBgAdd
+{
+	background-color : rgba(255, 255, 255, 0.125490196078431);
+}
+.msgBotKbIconFg
+{
+	color : #ffffff;
+}
+.msgBotKbRippleBg
+{
+	background-color : rgba(0, 0, 0, 0.125490196078431);
+}
+.mediaInFg
+{
+	color : #a0acb6;
+}
+.mediaInFgSelected
+{
+	color : #6a9cc5;
+}
+.mediaOutFg
+{
+	color : #6cc264;
+}
+.mediaOutFgSelected
+{
+	color : #50a79c;
+}
+.youtubePlayIconBg
+{
+	background-color : rgba(232, 49, 49, 0.784313725490196);
+}
+.youtubePlayIconFg
+{
+	color : #ffffff;
+}
+.videoPlayIconBg
+{
+	background-color : rgba(0, 0, 0, 0.498039215686275);
+}
+.videoPlayIconFg
+{
+	color : #ffffff;
+}
+.toastBg
+{
+	background-color : rgba(0, 0, 0, 0.698039215686274);
+}
+.toastFg
+{
+	color : #ffffff;
+}
+.reportSpamBg
+{
+	background-color : rgba(255, 255, 255, 0.949019607843137);
+}
+.reportSpamFg
+{
+	color : #000000;
+}
+.historyToDownBg
+{
+	background-color : #ffffff;
+}
+.historyToDownBg:hover
+{
+	background-color : #f1f1f1;
+}
+.historyToDownBg:active
+{
+	background-color : #e5e5e5;
+}
+.historyToDownFg
+{
+	color : #a8a8a8;
+}
+.historyToDownFg:hover
+{
+	color : #999999;
+}
+.historyToDownShadow
+{
+	background-color : rgba(0, 0, 0, 0.250980392156863);
+}
+.historyComposeAreaBg
+{
+	background-color : #ffffff;
+}
+.historyComposeAreaFg
+{
+	color : #000000;
+}
+.historyComposeAreaFgService
+{
+	color : #a0acb6;
+}
+.historyComposeIconFg
+{
+	color : #a8a8a8;
+}
+.historyComposeIconFg:hover
+{
+	color : #999999;
+}
+.historySendIconFg
+{
+	color : #40a7e3;
+}
+.historySendIconFg:hover
+{
+	color : #40a7e3;
+}
+.historyPinnedBg
+{
+	background-color : #ffffff;
+}
+.historyReplyBg
+{
+	background-color : #ffffff;
+}
+.historyReplyIconFg
+{
+	color : #40a7e3;
+}
+.historyReplyCancelFg
+{
+	color : #a8a8a8;
+}
+.historyReplyCancelFg:hover
+{
+	color : #999999;
+}
+.historyComposeButtonBg
+{
+	background-color : #ffffff;
+}
+.historyComposeButtonBg:hover
+{
+	background-color : #f1f1f1;
+}
+.historyComposeButtonBg:active
+{
+	background-color : #e5e5e5;
+}
+.overviewCheckBg
+{
+	background-color : rgba(0, 0, 0, 0.250980392156863);
+}
+.overviewCheckFg
+{
+	color : #ffffff;
+}
+.overviewCheckFg:focus
+{
+	color : #ffffff;
+}
+.overviewPhotoSelectOverlay
+{
+	background-color : rgba(64, 172, 227, 0.2);
+}
+.profileStatusFg:hover
+{
+	color : #7c99b2;
+}
+.profileVerifiedCheckBg
+{
+	background-color : #40a7e3;
+}
+.profileVerifiedCheckFg
+{
+	color : #ffffff;
+}
+.profileAdminStartFg
+{
+	color : #40a7e3;
+}
+.notificationsBoxMonitorFg
+{
+	color : #000000;
+}
+.notificationsBoxScreenBg
+{
+	background-color : #419fd9;
+}
+.notificationSampleUserpicFg
+{
+	color : #40a7e3;
+}
+.notificationSampleCloseFg
+{
+	color : #d7d7d7;
+}
+.notificationSampleTextFg
+{
+	color : #d7d7d7;
+}
+.notificationSampleNameFg
+{
+	color : #939393;
+}
+.mainMenuBg
+{
+	background-color : #ffffff;
+}
+.mainMenuCoverBg
+{
+	background-color : #419fd9;
+}
+.mainMenuCoverFg
+{
+	color : #ffffff;
+}
+.mediaPlayerBg
+{
+	background-color : #ffffff;
+}
+.mediaPlayerActiveFg
+{
+	color : #40a7e3;
+}
+.mediaPlayerInactiveFg
+{
+	color : #e1eaef;
+}
+.mediaPlayerDisabledFg
+{
+	color : #9dd1ef;
+}
+.mediaviewFileBg
+{
+	background-color : #ffffff;
+}
+.mediaviewFileNameFg
+{
+	color : #000000;
+}
+.mediaviewFileSizeFg
+{
+	color : #999999;
+}
+.mediaviewFileRedCornerFg
+{
+	color : #d55959;
+}
+.mediaviewFileYellowCornerFg
+{
+	color : #e8a659;
+}
+.mediaviewFileGreenCornerFg
+{
+	color : #49a957;
+}
+.mediaviewFileBlueCornerFg
+{
+	color : #599dcf;
+}
+.mediaviewFileExtFg
+{
+	color : #ffffff;
+}
+.mediaviewMenuBg
+{
+	background-color : #383838;
+}
+.mediaviewMenuBg:hover
+{
+	background-color : #505050;
+}
+.mediaviewMenuBg:active
+{
+	background-color : #676767;
+}
+.mediaviewMenuFg
+{
+	color : #ffffff;
+}
+.mediaviewBg
+{
+	background-color : rgba(34, 34, 34, 0.92156862745098);
+}
+.mediaviewVideoBg
+{
+	background-color : #000000;
+}
+.mediaviewControlBg
+{
+	background-color : rgba(0, 0, 0, 0.235294117647059);
+}
+.mediaviewControlFg
+{
+	color : #ffffff;
+}
+.mediaviewCaptionBg
+{
+	background-color : rgba(17, 17, 17, 0.501960784313725);
+}
+.mediaviewCaptionFg
+{
+	color : #ffffff;
+}
+.mediaviewTextLinkFg
+{
+	color : #91d9ff;
+}
+.mediaviewSaveMsgBg
+{
+	background-color : rgba(0, 0, 0, 0.698039215686274);
+}
+.mediaviewSaveMsgFg
+{
+	color : #ffffff;
+}
+.mediaviewPlayback:focus
+{
+	background-color : #c7c7c7;
+}
+.mediaviewPlayback:disabled
+{
+	background-color : #252525;
+}
+.mediaviewPlaybackActive:hover
+{
+	background-color : #ffffff;
+}
+.mediaviewPlaybackInactive:hover
+{
+	background-color : #474747;
+}
+.mediaviewPlaybackProgressFg
+{
+	color : rgba(255, 255, 255, 0.780392156862745);
+}
+.mediaviewPlaybackIconFg
+{
+	color : #c7c7c7;
+}
+.mediaviewPlaybackIconFg:hover
+{
+	color : #ffffff;
+}
+.mediaviewTransparentBg
+{
+	background-color : #ffffff;
+}
+.mediaviewTransparentFg
+{
+	color : #cccccc;
+}
+.notificationBg
+{
+	background-color : #ffffff;
+}

@@ -1,0 +1,257 @@
+@font-face {
+    font-family: OpenSans-Bold;
+    src: url(OpenSans-Bold.ttf);
+}
+@font-face {
+    font-family: OpenSans-Semibold;
+    src: url(OpenSans-Semibold.ttf);
+}
+@font-face {
+    font-family: OpenSans-Regular;
+    src: url(OpenSans-Regular.ttf);
+}
+.tdesktop
+{
+  height: 571px;
+  width: 903px;
+  margin: auto;
+  -webkit-box-shadow: 0px 3px 10px 0px rgba(50, 50, 50, 0.7);
+  -moz-box-shadow:    0px 3px 10px 0px rgba(50, 50, 50, 0.7);
+  box-shadow:         0px 3px 10px 0px rgba(50, 50, 50, 0.7);
+  margin-top: 10px;
+}
+.titleBg
+{
+  height: 21px;
+  width: 903px;
+}
+.titleFg
+{
+  text-align: center;
+  width: 830px;
+  float: left;
+  font-family: OpenSans-Regular;
+  font-size: 10pt;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari*/
+  -khtml-user-select: none; /* Konqueror */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently*/
+  cursor:default;
+}
+.titleButtonFg
+{
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  padding: 3px 8px 9px 6px;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari*/
+  -khtml-user-select: none; /* Konqueror */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently*/
+  cursor:default;
+  font-family: OpenSans-Bold;
+  font-size: 10pt;
+}
+.titleButtonCloseFg
+{
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  padding: 4px 7px 8px 7px;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari*/
+  -khtml-user-select: none; /* Konqueror */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently*/
+  cursor:default;
+  font-family: OpenSans-Bold;
+  font-size: 10pt;
+}
+.titleButtonBg
+{
+  display: block;
+  float: left;
+  width: 24px;
+  height: 21px;
+  line-height: 21px;
+  font-size: 12px;
+  text-align: center;
+}
+.titleButtonCloseBg
+{
+  display: block;
+  float: left;
+  width: 25px;
+  height: 21px;
+  line-height: 21px;
+  font-size: 12px;
+  text-align: center;
+}
+.titleShadow
+{
+  height: 1px;
+  width: 903px;
+  top: 20px;
+  position: relative;
+}
+.layerBg
+{
+  height: 550px;
+  width: 903px;
+}
+.mainMenuCoverBg
+{
+  position: relative;
+  top: 10px;
+  height: 540px;
+  width: 274px;
+}
+.mainMenuBg
+{
+  width: 274px;
+  height: 400px;
+}
+.windowBg
+{
+  width: 274px;
+  height: 46px;
+}
+.mainMenuCoverFg
+{
+  font-family: OpenSans-Regular;
+  font-size: 10pt;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+  top: 18px;
+  left: 7px;
+  position: relative;
+}
+/*.windowBoldFg
+{
+  line-height: 46px;
+  font-family: OpenSans-Regular;
+  font-size: 13pt;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+}*/
+.windowBoldFg
+{
+  line-height: 46px;
+  font-family: OpenSans-Regular;
+  font-size: 13pt;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+  display: inline-block;
+  position: relative;
+  top: -46px;
+  left: 0;
+  padding-left: 69px;
+  width: 205px;
+}
+.mainMenuUser
+{
+  width: 274px;
+  height: 140px;
+}
+/*.menuIconFg
+{
+  line-height: 46px;
+  float: left;
+  padding-right: 26px;
+  padding-left: 29px;
+  width: 22px;
+  height: 22px;
+  position: relative;
+  top: 12px;
+}*/
+.menuIconFg
+{
+    line-height: 46px;
+    padding-right: 223px;
+    padding-left: 29px;
+    width: 22px;
+    height: 22px;
+    position: relative;
+    padding-top: 12px;
+    display: inline-block;
+    padding-bottom: 12px;
+}
+.menuIconFg[name="nGroup"]
+{
+  background-color: currentColor;
+  -webkit-mask: url(images/menu_new_group.png) no-repeat 29px 53%;
+  mask: url(images/menu_new_group.png) no-repeat 29px 53%;
+}
+.menuIconFg[name="nChannel"]
+{
+  background-color: currentColor;
+  -webkit-mask: url('images/menu_new_channel.png') no-repeat 29px 53%;
+  mask: url('images/menu_new_channel.png') no-repeat 29px 53%;
+}
+.menuIconFg[name="Contacts"]
+{
+  background-color: currentColor;
+  -webkit-mask: url('images/menu_contacts.png') no-repeat 29px 53%;
+  mask: url('images/menu_contacts.png') no-repeat 29px 53%;
+}
+.menuIconFg[name="Settings"]
+{
+  background-color: currentColor;
+  -webkit-mask: url('images/menu_settings.png') no-repeat 29px 53%;
+  mask: url('images/menu_settings.png') no-repeat 29px 53%;
+}
+.menuIconFg[name="FAQ"]
+{
+  background-color: currentColor;
+  -webkit-mask: url('images/menu_help.png') no-repeat 29px 53%;
+  mask: url('images/menu_help.png') no-repeat 29px 53%;
+}
+.mainMenuUser
+{
+  left: 24px;
+  top: 22px;
+  position: relative;
+}
+.avatar
+{
+  line-height: 92px;
+  //background-image: url('http://i.stack.imgur.com/Dj7eP.jpg');
+  background: #e17076;
+  font-size: 16px;
+  font-family: OpenSans-Bold;
+  text-align: center;
+  color: #ffffff;
+  line-height: 48px;
+  width: 48px;
+  height: 48px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
