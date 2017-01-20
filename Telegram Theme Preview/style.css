@@ -144,7 +144,7 @@ h2
 {
   line-height: 46px;
   font-family: OpenSans-Regular;
-  font-size: 11pt;
+  font-size: 10pt;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -256,9 +256,37 @@ h2
 }
 .windowSubTextFg[name=About]
 {
+  font-family: OpenSans-Regular;
+  font-size: 10pt;
+  cursor: pointer;
+  left: 112px;
+  top: 86px;
+  position: relative;
+  display: inline-block;
+  width: 10px;
+}
+.windowSubTextFg[name=Version]
+{
   top: 104px;
   font-family: OpenSans-Regular;
   font-size: 10pt;
   cursor: pointer;
-  width: 130px;
+  width: 81px;
+}
+.windowSubTextFg[name=Div]
+{
+  font-family: OpenSans-Regular;
+  font-size: 10pt;
+  cursor: default;
+  left: 115px;
+  top: 86px;
+  position: relative;
+  display: inline-block;
+  width: 10px;
+}
+.windowSubTextFg[name=TDesktop]:hover ,
+.windowSubTextFg[name=About]:hover,
+.windowSubTextFg[name=Version]:hover
+{
+  text-decoration: underline;
 }
