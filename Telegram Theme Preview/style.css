@@ -1,3 +1,4 @@
+/* Load fonts OpenSans Bold, Semibold and Regular*/
 @font-face {
     font-family: OpenSans-Bold;
     src: url(OpenSans-Bold.ttf);
@@ -10,73 +11,82 @@
     font-family: OpenSans-Regular;
     src: url(OpenSans-Regular.ttf);
 }
+/* Titles*/
 h2
 {
   font-family: OpenSans-Bold;
 }
-.tdesktop
+/* Window and shadow*/
+.window
 {
   height: 571px;
   width: 903px;
   margin: auto;
-  -webkit-box-shadow: 0px 3px 10px 0px rgba(50, 50, 50, 0.7);
-  -moz-box-shadow:    0px 3px 10px 0px rgba(50, 50, 50, 0.7);
-  box-shadow:         0px 3px 10px 0px rgba(50, 50, 50, 0.7);
+  -webkit-box-shadow: 0px 3px 10px 0px var(--windowShadowFg);
+  -moz-box-shadow:    0px 3px 10px 0px var(--windowShadowFg);
+  box-shadow:         0px 3px 10px 0px var(--windowShadowFg);
   margin-top: 10px;
 }
-.titleBg
+/* Start Titlebar */
+.titleBarBg
 {
   height: 21px;
   width: 903px;
+  background-color: var(--titleBg);
 }
-.titleFg
+.titleBarFg
 {
   text-align: center;
   width: 830px;
   float: left;
   font-family: OpenSans-Regular;
   font-size: 10pt;
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none; /* Safari*/
-  -khtml-user-select: none; /* Konqueror */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
-  user-select: none; /* Non-prefixed version, currently*/
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   cursor:default;
+  color: var(--titleFg);
 }
-.titleButtonFg
+.titleBtnFg[name="minimize"]
 {
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  padding: 3px 8px 9px 6px;
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none; /* Safari*/
-  -khtml-user-select: none; /* Konqueror */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
-  user-select: none; /* Non-prefixed version, currently*/
-  cursor:default;
-  font-family: OpenSans-Bold;
-  font-size: 10pt;
+  width: 16px;
+  height: 13px;
+  background-color: var(--titleButtonFg);
+  -webkit-mask: url('images/title_button_minimize.png') no-repeat 4px 4px;
+  mask: url('images/title_button_minimize.png') no-repeat 4px 4px;
 }
-.titleButtonCloseFg
+.titleBtnFg[name="minimize"]:hover
 {
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  padding: 4px 7px 8px 7px;
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none; /* Safari*/
-  -khtml-user-select: none; /* Konqueror */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
-  user-select: none; /* Non-prefixed version, currently*/
-  cursor:default;
-  font-family: OpenSans-Bold;
-  font-size: 10pt;
+  background-color: var(--titleButtonFgOver);
 }
-.titleButtonBg
+.titleBtnFg[name="maximize"]
+{
+  width: 16px;
+  height: 13px;
+  background-color: var(--titleButtonFg);
+  -webkit-mask: url('images/title_button_maximize.png') no-repeat 4px 4px;
+  mask: url('images/title_button_maximize.png') no-repeat 4px 4px;
+}
+.titleBtnFg[name="maximize"]:hover
+{
+  background-color: var(--titleButtonFgOver);
+}
+.titleBtnCloseFg[name="close"]
+{
+  width: 16px;
+  height: 13px;
+  background-color: var(--titleButtonCloseFg);
+  -webkit-mask: url('images/title_button_close.png') no-repeat 5px 4px;
+  mask: url('images/title_button_close.png') no-repeat 5px 4px;
+}
+.titleBtnCloseFg[name="close"]:hover
+{
+  background-color: var(--titleButtonCloseFgOver);
+}
+.titleBtnBg
 {
   display: block;
   float: left;
@@ -85,8 +95,25 @@ h2
   line-height: 21px;
   font-size: 12px;
   text-align: center;
+  background-color: var(--titleButtonBg);
 }
-.titleButtonCloseBg
+.titleBtnBg:hover
+{
+  background-color: var(--titleButtonBgOver);
+}
+.titleBtnFg
+{
+  display: inline-block;
+  padding: 3px 5px 5px 6px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor:default;
+}
+.titleBtnCloseBg
 {
   display: block;
   float: left;
@@ -95,6 +122,23 @@ h2
   line-height: 21px;
   font-size: 12px;
   text-align: center;
+  background-color: var(--titleButtonCloseBg);
+}
+.titleBtnCloseBg:hover
+{
+  background-color: var(--titleButtonCloseBgOver);
+}
+.titleBtnCloseFg
+{
+  display: inline-block;
+  padding: 4px 7px 4px 7px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor:default;
 }
 .titleShadow
 {
@@ -102,30 +146,165 @@ h2
   width: 903px;
   top: 20px;
   position: relative;
+  background-color: var(--titleShadow);
 }
+/* End Titlebar */
+
+/* Start main menu box, search box and chat list */
+.mMenuBoxBg
+{
+  width: 330px;
+  height: 54px;
+}
+.mMenuBoxBg, .dialogBg
+{
+  background-color: var(--dialogsBg);
+}
+.mMenuBtnBg
+{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: relative;
+  top: 7px;
+  left: 7px;
+}
+.mMenuBtnBg:active
+{
+  background-color: var(--windowBgOver);
+}
+.mMenuBtnFg
+{
+  line-height: 40px;
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  padding-top: 14px;
+  display: inline-block;
+  padding-bottom: 14px;
+  background-color: var(--menuIconFg);
+  -webkit-mask: url('images/dialogs_menu.png') no-repeat 10px 10px;
+  mask: url('images/dialogs_menu.png') no-repeat 10px 10px;
+  cursor: pointer;
+}
+.mMenuBtnFg:hover
+{
+  background-color: var(--menuIconFgOver);
+}
+.searchForm
+{
+  padding-top: 8px;
+  padding-bottom: 0;
+  padding-right: 0;
+  height: 32px;
+  width: 264px;
+  position: relative;
+  top: -32px;
+  left: 54px;
+}
+.searchBoxBg
+{
+  padding: 8px 11px;
+  position: relative;
+  line-height: 40px;
+  border-radius: 2px;
+  border: 2px solid var(--filterInputInactiveBg);
+  background-color: var(--filterInputInactiveBg);
+  box-sizing: border-box;
+  height: 32px;
+  width: 264px;
+  top: -4px;
+  left: 1px;
+}
+.searchBoxBg:focus
+{
+  border: 2px solid var(--filterInputBorderFg);
+  background-color: var(--windowBg);
+}
+.searchBoxBg::-webkit-search-cancel-button
+{
+  -webkit-appearance: none;
+  display: inline-block;
+  position: relative;
+  left: 10px;
+  background-color: var(--cancelIconFg);
+  -webkit-mask: url('images/dialogs_cancel_search.png') no-repeat 0 0;
+  mask: url('images/dialogs_cancel_search.png') no-repeat 0 0;
+  width: 18px;
+	height: 18px;
+}
+.searchBoxBg::-webkit-search-cancel-button:hover
+{
+  -webkit-appearance: none;
+  display: inline-block;
+  position: relative;
+  left: 10px;
+  background-color: var(--cancelIconFgOver);;
+  -webkit-mask: url('images/dialogs_cancel_search.png') no-repeat 0 0;
+  mask: url('images/dialogs_cancel_search.png') no-repeat 0 0;
+  width: 18px;
+	height: 18px;
+}
+.dialogBg
+{
+  width: 330px;
+  height: 62px;
+  display: block;
+}
+.dialogBg:hover
+{
+  background-color: var(--dialogsBgOver);
+}
+.dialogBg:active
+{
+  background-color: var(--windowBgRipple);
+}
+.dialogBg[name="selected"]
+{
+  background-color: var(--dialogsBgActive);
+}
+.dialogBg[name="selected"]:active
+{
+  background-color: var(--activeButtonBgRipple);
+}
+
 .layerBg
 {
   height: 550px;
   width: 903px;
+  background-color: var(--layerBg);
 }
-.mainMenuCoverBg
+.mMenuCoverBg
 {
   position: relative;
   top: 10px;
   height: 540px;
   width: 274px;
+  background-color: var(--mainMenuCoverBg);
 }
-.mainMenuBg
+.mMenuBg
 {
   width: 274px;
   height: 400px;
+  background-color: var(--mainMenuBg);
 }
-.windowBg
+.mMenuButton
 {
   width: 274px;
   height: 46px;
+  background-color: var(--windowBg);
 }
-.mainMenuCoverFg
+.mMenuButton:hover
+{
+  background-color: var(--windowBgOver);
+}
+.mMenuButton:active
+{
+  background-color: var(--windowBgRipple);
+}
+.mMenuCoverFg
 {
   font-family: OpenSans-Regular;
   font-size: 10pt;
@@ -139,8 +318,9 @@ h2
   top: 18px;
   left: 7px;
   position: relative;
+  color: var(--mainMenuCoverFg);
 }
-.windowBoldFg
+.mMenuButtonText
 {
   line-height: 46px;
   font-family: OpenSans-Regular;
@@ -158,65 +338,71 @@ h2
   left: 0;
   padding-left: 69px;
   width: 205px;
+  color: var(--windowBoldFg);
 }
-.mainMenuUser
+.mMenuButtonText:hover
+{
+  color: var(--windowBoldFgOver);
+}
+.mMenuUser
 {
   width: 274px;
   height: 140px;
 }
-.menuIconFg
+.mMenuIcon[name="nGroup"]
 {
-    line-height: 46px;
-    padding-right: 223px;
-    padding-left: 29px;
-    width: 22px;
-    height: 22px;
-    position: relative;
-    padding-top: 12px;
-    display: inline-block;
-    padding-bottom: 12px;
-}
-.menuIconFg[name="nGroup"]
-{
-  background-color: currentColor;
   -webkit-mask: url(images/menu_new_group.png) no-repeat 29px 53%;
   mask: url(images/menu_new_group.png) no-repeat 29px 53%;
 }
-.menuIconFg[name="nChannel"]
+.mMenuIcon[name="nChannel"]
 {
-  background-color: currentColor;
   -webkit-mask: url('images/menu_new_channel.png') no-repeat 29px 53%;
   mask: url('images/menu_new_channel.png') no-repeat 29px 53%;
 }
-.menuIconFg[name="Contacts"]
+.mMenuIcon[name="Contacts"]
 {
-  background-color: currentColor;
   -webkit-mask: url('images/menu_contacts.png') no-repeat 29px 53%;
   mask: url('images/menu_contacts.png') no-repeat 29px 53%;
 }
-.menuIconFg[name="Settings"]
+.mMenuIcon[name="Settings"]
 {
-  background-color: currentColor;
   -webkit-mask: url('images/menu_settings.png') no-repeat 29px 53%;
   mask: url('images/menu_settings.png') no-repeat 29px 53%;
 }
-.menuIconFg[name="FAQ"]
+.mMenuIcon[name="FAQ"]
 {
-  background-color: currentColor;
   -webkit-mask: url('images/menu_help.png') no-repeat 29px 53%;
   mask: url('images/menu_help.png') no-repeat 29px 53%;
 }
-.mainMenuUser
+.mMenuIcon
+{
+  display: inline-block;
+  line-height: 46px;
+  padding-right: 223px;
+  padding-left: 29px;
+  z-index: 1;
+  width: 22px;
+  height: 22px;
+  position: relative;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: var(--menuIconFg);
+}
+.mMenuIcon:hover
+{
+  background-color: var(--menuIconFgOver);
+}
+.mMenuUser
 {
   left: 24px;
   top: 22px;
   position: relative;
 }
-.avatar
+.mMenuAvatar
 {
   line-height: 92px;
-  //background-image: url('http://i.stack.imgur.com/Dj7eP.jpg');
-  background: #e17076;
+  /*background-image: url('http:/*i.stack.imgur.com/Dj7eP.jpg');*/
+  background-color: #e17076;
   font-size: 16px;
   font-family: OpenSans-Bold;
   text-align: center;
@@ -235,7 +421,7 @@ h2
   user-select: none;
   cursor: pointer;
 }
-.windowSubTextFg
+.mMenuAbout
 {
   position: relative;
   left: 30px;
@@ -245,8 +431,9 @@ h2
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  color: var(--windowSubTextFg);
 }
-.windowSubTextFg[name=TDesktop]
+.mMenuAbout[name=TDesktop]
 {
   top: 101px;
   font-family: OpenSans-Semibold;
@@ -254,7 +441,7 @@ h2
   cursor: pointer;
   width: 117px;
 }
-.windowSubTextFg[name=About]
+.mMenuAbout[name=About]
 {
   font-family: OpenSans-Regular;
   font-size: 10pt;
@@ -265,7 +452,7 @@ h2
   display: inline-block;
   width: 10px;
 }
-.windowSubTextFg[name=Version]
+.mMenuAbout[name=Version]
 {
   top: 104px;
   font-family: OpenSans-Regular;
@@ -273,7 +460,7 @@ h2
   cursor: pointer;
   width: 81px;
 }
-.windowSubTextFg[name=Div]
+.mMenuAbout[name=Div]
 {
   font-family: OpenSans-Regular;
   font-size: 10pt;
@@ -284,9 +471,10 @@ h2
   display: inline-block;
   width: 10px;
 }
-.windowSubTextFg[name=TDesktop]:hover ,
-.windowSubTextFg[name=About]:hover,
-.windowSubTextFg[name=Version]:hover
+.mMenuAbout[name=TDesktop]:hover ,
+.mMenuAbout[name=About]:hover,
+.mMenuAbout[name=Version]:hover
 {
+  color: var(--windowSubTextFgOver);
   text-decoration: underline;
 }
