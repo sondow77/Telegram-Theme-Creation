@@ -22,7 +22,7 @@ namespace CSS_to_Colors
 			if (args.Length == 2)
 	        {
 				string cssCode = File.ReadAllText(args[0]);
-				string cCode = cssCode.Replace(".","").Replace("\r\n{\r\n\t","").Replace("background-","").Replace("color","").Replace(" : ",": ").Replace(":hover","Over").Replace(":focus","Active").Replace(":disabled","Inactive").Replace(":active","Ripple").Replace("\r\n}","");
+				string cCode = cssCode.Replace(".","").Replace("\r\n{\r\n\t","").Replace(" : ",": ").Replace("\r\n}","").Replace("--","").Replace(":root","").Replace("\r\n\t","\r\n");
 				string[] stringSeparators = new string[] { "\r\n" };
 				string[] cssA = cCode.Split(stringSeparators,StringSplitOptions.None);
 				for(int i = 0; i < cssA.Length;i++)
