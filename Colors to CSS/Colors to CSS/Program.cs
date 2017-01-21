@@ -6,6 +6,14 @@
  * 
  * To change this template use Tools | Options | Coding | Edit Standard Headers.
  */
+/*
+ * Created by SharpDevelop.
+ * User: sondo
+ * Date: 17/1/2017
+ * Time: 5:06 p. m.
+ * 
+ * To change this template use Tools | Options | Coding | Edit Standard Headers.
+ */
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -50,10 +58,17 @@ namespace Colors_to_CSS
 				string[] css = al.ToArray();
 				for(int i = 0; i < css.Length; i++)
 				{
-					css[i] = "." + css[i].Replace(":"," :").Replace("Active :",": focus :").Replace("Inactive :",": disabled :").Replace("Ripple :",": active :").Replace("Over :",": hover :").Replace(" :","\r\n{\r\n\tbackground-color :").Replace(";",";\r\n}").Replace(": hover",":hover").Replace(": focus",":focus").Replace(": disabled",":disabled").Replace(": active",":active");
-					if(css[i].Contains("Fg"))
+					if(i == 0)
 					{
-						css[i] = css[i].Replace("background-color","color");
+						css[i] = ":root\r\n{\r\n\t--" + css[i];
+					}
+					if(i > 0 && i < css.Length-1)
+					{
+						css[i] = "\t--" + css[i];
+					}
+					if(i == css.Length-1)
+					{
+						css[i] = "\t--" + css[i] + "\r\n}";
 					}
 					string hex = Regex.Match(css[i],@"#[0-9a-fA-F]{8}",RegexOptions.IgnoreCase).Value;
 					css[i] = Regex.Replace(css[i],@"#[0-9a-fA-F]{8}",ConvertHexToRgba(hex));
