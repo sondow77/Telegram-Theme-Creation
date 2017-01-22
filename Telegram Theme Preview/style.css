@@ -1,4 +1,3 @@
-/* Load fonts OpenSans Bold, Semibold and Regular*/
 @font-face {
     font-family: OpenSans-Bold;
     src: url(OpenSans-Bold.ttf);
@@ -11,28 +10,26 @@
     font-family: OpenSans-Regular;
     src: url(OpenSans-Regular.ttf);
 }
-/* Titles*/
 h2
 {
   font-family: OpenSans-Bold;
 }
-/* Window and shadow*/
 .window
 {
   height: 571px;
   width: 903px;
   margin: auto;
-  -webkit-box-shadow: 0px 3px 10px 0px var(--windowShadowFg);
-  -moz-box-shadow:    0px 3px 10px 0px var(--windowShadowFg);
-  box-shadow:         0px 3px 10px 0px var(--windowShadowFg);
+  -webkit-box-shadow: 0px 0px 17px -6px var(--windowShadowFg);
+  -moz-box-shadow: 0px 0px 17px -6px var(--windowShadowFg);
+  box-shadow: 0px 0px 17px -6px var(--windowShadowFg);
   margin-top: 10px;
 }
-/* Start Titlebar */
 .titleBarBg
 {
   height: 21px;
   width: 903px;
   background-color: var(--titleBg);
+  float: left;
 }
 .titleBarFg
 {
@@ -52,8 +49,6 @@ h2
 }
 .titleBtnFg[name="minimize"]
 {
-  width: 16px;
-  height: 13px;
   background-color: var(--titleButtonFg);
   -webkit-mask: url('images/title_button_minimize.png') no-repeat 4px 4px;
   mask: url('images/title_button_minimize.png') no-repeat 4px 4px;
@@ -64,8 +59,6 @@ h2
 }
 .titleBtnFg[name="maximize"]
 {
-  width: 16px;
-  height: 13px;
   background-color: var(--titleButtonFg);
   -webkit-mask: url('images/title_button_maximize.png') no-repeat 4px 4px;
   mask: url('images/title_button_maximize.png') no-repeat 4px 4px;
@@ -76,8 +69,6 @@ h2
 }
 .titleBtnCloseFg[name="close"]
 {
-  width: 16px;
-  height: 13px;
   background-color: var(--titleButtonCloseFg);
   -webkit-mask: url('images/title_button_close.png') no-repeat 5px 4px;
   mask: url('images/title_button_close.png') no-repeat 5px 4px;
@@ -88,13 +79,9 @@ h2
 }
 .titleBtnBg
 {
-  display: block;
   float: left;
   width: 24px;
   height: 21px;
-  line-height: 21px;
-  font-size: 12px;
-  text-align: center;
   background-color: var(--titleButtonBg);
 }
 .titleBtnBg:hover
@@ -103,25 +90,15 @@ h2
 }
 .titleBtnFg
 {
-  display: inline-block;
-  padding: 3px 5px 5px 6px;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor:default;
+  display: block;
+  width: 24px;
+  height: 21px;
 }
 .titleBtnCloseBg
 {
-  display: block;
   float: left;
   width: 25px;
   height: 21px;
-  line-height: 21px;
-  font-size: 12px;
-  text-align: center;
   background-color: var(--titleButtonCloseBg);
 }
 .titleBtnCloseBg:hover
@@ -130,14 +107,9 @@ h2
 }
 .titleBtnCloseFg
 {
-  display: inline-block;
-  padding: 4px 7px 4px 7px;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  display: block;
+  width: 25px;
+  height: 21px;
   cursor:default;
 }
 .titleShadow
@@ -148,13 +120,11 @@ h2
   position: relative;
   background-color: var(--titleShadow);
 }
-/* End Titlebar */
-
-/* Start main menu box, search box and chat list */
 .mMenuBoxBg
 {
   width: 330px;
   height: 54px;
+  float: left;
 }
 .mMenuBoxBg, .dialogBg
 {
@@ -166,6 +136,9 @@ h2
   height: 40px;
   border-radius: 50%;
   position: relative;
+}
+.mMenuBtnBg[name="mMenu"]
+{
   top: 7px;
   left: 7px;
 }
@@ -176,18 +149,17 @@ h2
 .mMenuBtnFg
 {
   line-height: 40px;
-  padding-right: 10px;
-  padding-left: 10px;
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
   position: relative;
-  padding-top: 14px;
   display: inline-block;
-  padding-bottom: 14px;
   background-color: var(--menuIconFg);
+  cursor: pointer;
+}
+.mMenuBtnFg[name="mMenu"]
+{
   -webkit-mask: url('images/dialogs_menu.png') no-repeat 10px 10px;
   mask: url('images/dialogs_menu.png') no-repeat 10px 10px;
-  cursor: pointer;
 }
 .mMenuBtnFg:hover
 {
@@ -251,7 +223,9 @@ h2
 {
   width: 330px;
   height: 62px;
+  float: left;
   display: block;
+  cursor: pointer;
 }
 .dialogBg:hover
 {
@@ -272,7 +246,7 @@ h2
 
 .layerBg
 {
-  height: 550px;
+  height: 571px;
   width: 903px;
   background-color: var(--layerBg);
 }
@@ -283,9 +257,11 @@ h2
   height: 540px;
   width: 274px;
   background-color: var(--mainMenuCoverBg);
+  float: left;
 }
 .mMenuBg
 {
+  float: left;
   width: 274px;
   height: 400px;
   background-color: var(--mainMenuBg);
@@ -294,6 +270,7 @@ h2
 {
   width: 274px;
   height: 46px;
+  float: left;
   background-color: var(--windowBg);
 }
 .mMenuButton:hover
@@ -319,6 +296,7 @@ h2
   left: 7px;
   position: relative;
   color: var(--mainMenuCoverFg);
+  float: left;
 }
 .mMenuButtonText
 {
@@ -339,6 +317,7 @@ h2
   padding-left: 69px;
   width: 205px;
   color: var(--windowBoldFg);
+  float: left;
 }
 .mMenuButtonText:hover
 {
@@ -346,6 +325,7 @@ h2
 }
 .mMenuUser
 {
+  float: left;
   width: 274px;
   height: 140px;
 }
@@ -387,6 +367,7 @@ h2
   padding-top: 12px;
   padding-bottom: 12px;
   background-color: var(--menuIconFg);
+  float: left;
 }
 .mMenuIcon:hover
 {
@@ -420,8 +401,10 @@ h2
   -ms-user-select: none;
   user-select: none;
   cursor: pointer;
+  float: left;
+  margin-right: 195px;
 }
-.mMenuAbout
+.mMenuAboutFg
 {
   position: relative;
   left: 30px;
@@ -432,27 +415,29 @@ h2
   -ms-user-select: none;
   user-select: none;
   color: var(--windowSubTextFg);
+  float: left;
 }
-.mMenuAbout[name=TDesktop]
+.mMenuAboutFg[name=TDesktop]
 {
   top: 101px;
   font-family: OpenSans-Semibold;
   font-size: 10pt;
   cursor: pointer;
   width: 117px;
+  margin-right: 100px;
 }
-.mMenuAbout[name=About]
+.mMenuAboutFg[name=About]
 {
   font-family: OpenSans-Regular;
   font-size: 10pt;
   cursor: pointer;
-  left: 112px;
-  top: 86px;
   position: relative;
   display: inline-block;
   width: 10px;
+  left: 35px;
+  top: 104px;
 }
-.mMenuAbout[name=Version]
+.mMenuAboutFg[name=Version]
 {
   top: 104px;
   font-family: OpenSans-Regular;
@@ -460,21 +445,585 @@ h2
   cursor: pointer;
   width: 81px;
 }
-.mMenuAbout[name=Div]
+.mMenuAboutFg[name=Div]
 {
   font-family: OpenSans-Regular;
   font-size: 10pt;
   cursor: default;
-  left: 115px;
-  top: 86px;
   position: relative;
   display: inline-block;
   width: 10px;
+  top: 104px;
+  left: 34px;
 }
-.mMenuAbout[name=TDesktop]:hover ,
-.mMenuAbout[name=About]:hover,
-.mMenuAbout[name=Version]:hover
+.mMenuAboutFg[name=TDesktop]:hover ,
+.mMenuAboutFg[name=About]:hover,
+.mMenuAboutFg[name=Version]:hover
 {
   color: var(--windowSubTextFgOver);
   text-decoration: underline;
+}
+.dialogShadow
+{
+  z-index: 1;
+  position: relative;
+  width: 1px;
+  height: 496px;
+  background-color: var(--shadowFg);
+  float: left;
+}
+.lChatShadow
+{
+  z-index: 1;
+  position: relative;
+  width: 1px;
+  height: 54px;
+  background-color: var(--shadowFg);
+  float: left;
+}
+.chatTopBg
+{
+  width: 572px;
+  height: 54px;
+  background-color: var(--windowBg);
+  position: relative;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  float: left;
+}
+.chatShadow
+{
+  width: 572px;
+  height: 1px;
+  background-color: var(--shadowFg);
+  position: relative;
+  top: 36px;
+  left: 1px;
+}
+.chatTitleFg
+{
+  top: 8px;
+  left: 17px;
+  position: relative;
+  font-family: OpenSans-Bold;
+  font-size: 10pt;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  color: var(--windowFg);
+}
+.chatSubTitleFg
+{
+  top: 28px;
+  left: 17px;
+  position: absolute;
+  font-family: OpenSans-Regular;
+  font-size: 10pt;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  color: var(--contactsStatusFg);
+}
+.chatStateFg
+{
+  top: 28px;
+  left: 78px;
+  position: relative;
+  font-family: OpenSans-Regular;
+  font-size: 10pt;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  color: var(--contactsStatusFgOnline);
+}
+.mMenuBtnFg[name="search"]
+{
+  -webkit-mask: url('images/title_search.png') no-repeat 11px 11px;
+  mask: url('images/title_search.png') no-repeat 11px 11px;
+}
+.mMenuBtnFg[name="options"]
+{
+  -webkit-mask: url('images/title_menu_dots.png') no-repeat 16px 10px;
+  mask: url('images/title_menu_dots.png') no-repeat 16px 10px;
+}
+.mMenuBtnBg[name="search"]
+{
+  position: absolute;
+  right: 46px;
+  top: 7px;
+}
+.mMenuBtnBg[name="options"]
+{
+  position: absolute;
+  right: 5px;
+  top: 7px;
+}
+.dialogAvatar
+{
+  position: relative;;
+  left: 10px;
+  top: 8px;
+  background-color: #e17076;
+  font-size: 16px;
+  font-family: OpenSans-Bold;
+  text-align: center;
+  color: #ffffff;
+  line-height: 46px;
+  width: 46px;
+  height: 46px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  float: left;
+  margin-right: 16px;
+}
+.dialogAvatar[name="telegram"]
+{
+  background-image: url('images/avatar.png');
+  text-indent: 100%;
+  white-space: hidden;
+  overflow: hidden;
+}
+.dialogIcon
+{
+  width: 24px;
+  height: 26px;
+  position: relative;
+  background-color: var(--dialogsChatIconFg);
+  float: left;
+}
+.dialogIcon[name="group"]
+{
+  -webkit-mask: url('images/dialogs_chat.png') no-repeat 7px 14px;
+  mask: url('images/dialogs_chat.png') no-repeat 7px 14px;
+}
+.dialogIcon[name="channel"]
+{
+  -webkit-mask: url('images/dialogs_channel.png') no-repeat 9px 14px;
+  mask: url('images/dialogs_channel.png') no-repeat 9px 14px;
+}
+.dialogBg[name="selected"] > .dialogTopFg > .dialogIcon
+{
+  background-color: var(--dialogsChatIconFgActive);
+}
+.dialogBg:not([name="selected"]):hover > .dialogTopFg > .dialogIcon
+{
+  background-color: var(--dialogsChatIconFgOver);
+}
+.dialogName
+{
+  font-family: OpenSans-Semibold;
+  font-size: 10pt;
+  position: relative;
+  top: 11px;
+  left: 6px;
+  float: left;
+  color: var(--dialogsNameFg);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.dialogBg[name="selected"] > .dialogTopFg > .dialogName
+{
+  color: var(--dialogsNameFgActive);
+}
+.dialogBg:not([name="selected"]):hover > .dialogTopFg > .dialogName
+{
+  color: var(--dialogsNameFgOver);
+}
+.dialogDate
+{
+  font-family: OpenSans-Regular;
+  font-size: 10pt;
+  float: right;
+  top: 10px;
+  right: 10px;
+  position: relative;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: var(--dialogsDateFg);
+}
+.dialogBg[name="selected"] > .dialogTopFg > .dialogDate
+{
+  color: var(--dialogsDateFgActive);
+}
+.dialogBg:not([name="selected"]):hover > .dialogTopFg > .dialogDate
+{
+  color: var(--dialogsDateFgOver);
+}
+.dialogsList
+{
+  float: left;
+  width: 330px;
+  height: 496px;
+}
+.dialogFrom
+{
+  font-family: OpenSans-Regular;
+  font-size: 10pt;
+  float: left;
+  position: relative;
+  left: 6px;
+  top: 6px;
+  display: inline-block;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: var(--dialogsTextFgService);
+}
+.dialogBg[name="selected"] > .dialogFrom
+{
+  color: var(--dialogsTextFgServiceActive);
+}
+.dialogBg:not([name="selected"]):hover > .dialogFrom
+{
+  color: var(--dialogsTextFgServiceOver);
+}
+.dialogText
+{
+  display: inline-block;
+  font-family: OpenSans-Regular;
+  font-size: 10pt;
+  float: left;
+  position: relative;
+  left: 8px;
+  top: 6px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: var(--dialogsTextFg);
+}
+.dialogBg[name="selected"] > .dialogText
+{
+  color: var(--dialogsTextFgActive);
+}
+.dialogBg:not([name="selected"]):hover > .dialogText
+{
+  color: var(--dialogsTextFgOver);
+}
+.dialogTopFg
+{
+  height: 28px;
+}
+.dialogRead
+{
+  float: right;
+  width: 26px;
+  height: 26px;
+}
+.dialogRead[name="sending"]
+{
+  background-color: var(--dialogsSendingIconFg);
+  -webkit-mask: url('images/dialogs_sending.png') no-repeat 0px 14px;
+  mask: url('images/dialogs_sending.png') no-repeat 3px 14px;
+}
+.dialogBg[name="selected"] > .dialogTopFg > .dialogRead[name="sending"]
+{
+  background-color: var(--dialogsSendingIconFgActive);
+}
+.dialogBg:not([name="selected"]):hover > .dialogTopFg > .dialogRead[name="sending"]
+{
+  background-color: var(--dialogsSendingIconFgOver);
+}
+.dialogRead[name="sent"]
+{
+  -webkit-mask: url('images/dialogs_sent.png') no-repeat 0px 14px;
+  mask: url('images/dialogs_sent.png') no-repeat 3px 14px;
+  background-color: var(--dialogsSentIconFg);
+}
+.dialogBg[name="selected"] > .dialogTopFg > .dialogRead[name="sent"]
+{
+  background-color: var(--dialogsSentIconFgActive);
+}
+.dialogBg:not([name="selected"]):hover > .dialogTopFg > .dialogRead[name="sent"]
+{
+  background-color: var(--dialogsSentIconFgOver);
+}
+.dialogRead[name="received"]
+{
+  -webkit-mask: url('images/dialogs_received.png') no-repeat 0px 14px;
+  mask: url('images/dialogs_received.png') no-repeat 3px 14px;
+  background-color: var(--dialogsSentIconFg);
+}
+.dialogBg[name="selected"] > .dialogTopFg > .dialogRead[name="received"]
+{
+  background-color: var(--dialogsSentIconFgActive);
+}
+.dialogBg:not([name="selected"]):hover > .dialogTopFg > .dialogRead[name="received"]
+{
+  background-color: var(--dialogsSentIconFgOver);
+}
+.dialogVerifiedStar
+{
+  float:left;
+  background-color: var(--dialogsVerifiedIconBg);
+  width: 14px;
+  height: 14px;
+  -webkit-mask: url('images/dialogs_verified_star.png') no-repeat 0px 0px;
+  mask: url('images/dialogs_verified_star.png') no-repeat 0px 0px;
+  position: relative;
+  display: inline-block;
+  left: 10px;
+  top: 12px;
+}
+.dialogBg:hover > .dialogTopFg > .dialogVerifiedStar
+{
+  background-color: var(--dialogsVerifiedIconBgOver);
+}
+.dialogBg[name="selected"] > .dialogTopFg > .dialogVerifiedStar
+{
+  background-color: var(--dialogsVerifiedIconBgActive);
+}
+.dialogVerifiedCheck
+{
+  float.left;
+  position: relative;
+  left: 3;
+  top: 5;
+  background-color: var(--dialogsVerifiedIconFg);
+  width: 8px;
+  height: 5px;
+  display: inline-block;
+  -webkit-mask: url('images/dialogs_verified_check.png') no-repeat 0px 0px;
+  mask: url('images/dialogs_verified_check.png') no-repeat 0px 0px;
+}
+.dialogBg:hover > .dialogTopFg > .dialogVerifiedStar > .dialogVerifiedCheck
+{
+  background-color: var(--dialogsVerifiedIconFgOver);
+}
+.dialogBg[name="selected"] > .dialogTopFg > .dialogVerifiedStar > .dialogVerifiedCheck
+{
+  background-color: var(--dialogsVerifiedIconFgActive);
+}
+.dialogBg[name="selected"]:hover > .dialogTopFg > .dialogVerifiedStar > .dialogVerifiedCheck
+{
+  background-color: var(--dialogsVerifiedIconFgActive);
+}
+.chatBg
+{
+  height: 496px;
+  width: 573px;
+  float: left;
+  background-image: url('images/bg_initial.jpg');
+}
+.dialogCounter
+{
+  text-align: center;
+  font-family: OpenSans-Bold;
+  font-size: 10pt;
+  right: 10px;
+  top: 6px;
+  width: 19px;
+  height: 19px;
+  float: right;
+  position: relative;
+  display: inline-block;
+  -webkit-mask: url('images/dialogs_counter.png') no-repeat 0px 0px;
+  mask: url('images/dialogs_counter.png') no-repeat 0px 0px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.dialogCounter:not([name="muted"])
+{
+  color: var(--dialogsUnreadFg);
+  background-color: var(--dialogsUnreadBg);
+}
+.dialogCounter[name="muted"]
+{
+  color: var(--dialogsUnreadFg);
+  background-color: var(--dialogsUnreadBgMuted);
+}
+.dialogBg:hover > .dialogCounter:not([name="muted"])
+{
+  color: var(--dialogsUnreadFgOver);
+  background-color: var(--dialogsUnreadBgOver);
+}
+.dialogBg:not([name="selected"]):hover > .dialogCounter[name="muted"]
+{
+  color: var(--dialogsUnreadFgOver);
+  background-color: var(--dialogsUnreadBgMutedOver);
+}
+.dialogBg[name="selected"] > .dialogCounter
+{
+  color: var(--dialogsUnreadFgActive);
+  background-color: var(--dialogsUnreadBgActive);
+}
+.dialogBg[name="selected"] > .dialogCounter[name="muted"]
+{
+  color: var(--dialogsUnreadFgActive);
+  background-color: var(--dialogsUnreadBgMutedActive);
+}
+.window[name="mainMenu"]
+{
+  background-image: url('images/bg_initial.jpg');
+}
+.messageBg
+{
+  width: 174px;
+  height: 50px;
+  position: relative;
+}
+.messageIn > .messageBg
+{
+  background-color: var(--msgInBg);
+  float: left;
+  -webkit-mask: url('images/chat_message.png') no-repeat 0px 0px;
+  mask: url('images/chat_message.png') no-repeat 0px 0px;
+  top: 8px;
+  margin-right: 176px;
+}
+.messageOut > .messageBg
+{
+  background-color: var(--msgOutBg);
+  float: right;
+  -webkit-mask: url('images/chat_message_out.png') no-repeat 0px 0px;
+  mask: url('images/chat_message_out.png') no-repeat 0px 0px;
+  right: 10px;
+  top: 2px;
+}
+.messageShadow
+{
+  float: left;
+  width: 174px;
+  height: 8px;
+  position: relative;
+}
+.messageIn > .messageShadow
+{
+  background-color: var(--msgInShadow);
+  -webkit-mask: url('images/chat_message_shadow.png') no-repeat 0px 0px;
+  mask: url('images/chat_message_shadow.png') no-repeat 0px 0px;
+  left: 50px;
+  top: 2px;
+}
+.messageOut > .messageShadow
+{
+  float: right;
+  background-color: var(--msgOutShadow);
+  -webkit-mask: url('images/chat_message_out_shadow.png') no-repeat 0px 0px;
+  mask: url('images/chat_message_out_shadow.png') no-repeat 0px 0px;
+  top: 46px;
+  left: 164px;
+}
+.messageAvatar
+{
+  position: relative;;
+  left: 13px;
+  top: 26px;
+  background-color: #e17076;
+  font-size: 16px;
+  font-family: OpenSans-Bold;
+  text-align: center;
+  color: #ffffff;
+  line-height: 33px;
+  width: 33px;
+  height: 33px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  float: left;
+  margin-right: 16px;
+}
+.messageFrom
+{
+  font-family: OpenSans-Semibold;
+  font-size: 10pt;
+  float: left;
+  position: relative;
+  top: 7px;
+  left: 20px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+.messageText
+{
+  font-family: OpenSans-Regular;
+  font-size: 10pt;
+  float: left;
+  position: relative;
+  top: 25px;
+}
+.messageOut > .messageBg > .messageText
+{
+  left: 13px;
+}
+.messageDate
+{
+  font-family: OpenSans-Regular;
+  font-size: 10pt;
+  float: right;
+  position: relative;
+  top: 30px;
+  right: 15px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+  color: var(--msgInDateFg);
+}
+.messageIn
+{
+    width: 573px;
+    height: 61px;
+}
+.messageOut
+{
+    width: 573px;
+    height: 61px;
 }
