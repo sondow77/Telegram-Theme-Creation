@@ -28,8 +28,15 @@ h2
 {
   height: 21px;
   width: 903px;
-  background-color: var(--titleBg);
   float: left;
+}
+.window[name="mainChat"] > .titleBarBg
+{
+  background-color: var(--titleBgActive);
+}
+.window[name="mainMenu"] > .titleBarBg
+{
+  background-color: var(--titleBg);
 }
 .titleBarFg
 {
@@ -45,48 +52,36 @@ h2
   -ms-user-select: none;
   user-select: none;
   cursor:default;
+}
+.window[name="mainChat"] > .titleBarBg > .titleBarFg
+{
+  color: var(--titleFgActive);
+}
+.window[name="mainMenu"] > .titleBarBg > .titleBarFg
+{
   color: var(--titleFg);
-}
-.titleBtnFg[name="minimize"]
-{
-  background-color: var(--titleButtonFg);
-  -webkit-mask: url('images/title_button_minimize.png') no-repeat 4px 4px;
-  mask: url('images/title_button_minimize.png') no-repeat 4px 4px;
-}
-.titleBtnFg[name="minimize"]:hover
-{
-  background-color: var(--titleButtonFgOver);
-}
-.titleBtnFg[name="maximize"]
-{
-  background-color: var(--titleButtonFg);
-  -webkit-mask: url('images/title_button_maximize.png') no-repeat 4px 4px;
-  mask: url('images/title_button_maximize.png') no-repeat 4px 4px;
-}
-.titleBtnFg[name="maximize"]:hover
-{
-  background-color: var(--titleButtonFgOver);
-}
-.titleBtnCloseFg[name="close"]
-{
-  background-color: var(--titleButtonCloseFg);
-  -webkit-mask: url('images/title_button_close.png') no-repeat 5px 4px;
-  mask: url('images/title_button_close.png') no-repeat 5px 4px;
-}
-.titleBtnCloseFg[name="close"]:hover
-{
-  background-color: var(--titleButtonCloseFgOver);
 }
 .titleBtnBg
 {
   float: left;
   width: 24px;
   height: 21px;
+}
+.window[name="mainMenu"] > .titleBarBg > .titleBtnBg
+{
   background-color: var(--titleButtonBg);
 }
-.titleBtnBg:hover
+.window[name="mainMenu"] > .titleBarBg > .titleBtnBg:hover
 {
   background-color: var(--titleButtonBgOver);
+}
+.window[name="mainChat"] > .titleBarBg > .titleBtnBg
+{
+  background-color: var(--titleButtonBgActive);
+}
+.window[name="mainChat"] > .titleBarBg > .titleBtnBg:hover
+{
+  background-color: var(--titleButtonBgActiveOver);
 }
 .titleBtnFg
 {
@@ -94,14 +89,51 @@ h2
   width: 24px;
   height: 21px;
 }
+.window[name="mainMenu"] > .titleBarBg > .titleBtnBg > .titleBtnFg
+{
+  background-color: var(--titleButtonFg);
+}
+.window[name="mainMenu"] > .titleBarBg > .titleBtnBg > .titleBtnFg:hover
+{
+  background-color: var(--titleButtonFgOver);
+}
+.window[name="mainChat"] > .titleBarBg > .titleBtnBg > .titleBtnFg
+{
+  background-color: var(--titleButtonFgActive);
+}
+.window[name="mainChat"] > .titleBarBg > .titleBtnBg > .titleBtnFg:hover
+{
+  background-color: var(--titleButtonFgActiveOver);
+}
+.titleBtnFg[name="minimize"]
+{
+  -webkit-mask: url('images/title_button_minimize.png') no-repeat 4px 4px;
+  mask: url('images/title_button_minimize.png') no-repeat 4px 4px;
+}
+.titleBtnFg[name="maximize"]
+{
+  -webkit-mask: url('images/title_button_maximize.png') no-repeat 4px 4px;
+  mask: url('images/title_button_maximize.png') no-repeat 4px 4px;
+}
 .titleBtnCloseBg
 {
   float: left;
   width: 25px;
   height: 21px;
+}
+.window[name="mainChat"] > .titleBarBg > .titleBtnCloseBg
+{
+  background-color: var(--titleButtonCloseBgActive);
+}
+.window[name="mainChat"] > .titleBarBg > .titleBtnCloseBg:hover
+{
+  background-color: var(--titleButtonCloseBgActiveOver);
+}
+.window[name="mainMenu"] > .titleBarBg > .titleBtnCloseBg
+{
   background-color: var(--titleButtonCloseBg);
 }
-.titleBtnCloseBg:hover
+.window[name="mainMenu"] > .titleBarBg > .titleBtnCloseBg:hover
 {
   background-color: var(--titleButtonCloseBgOver);
 }
@@ -111,6 +143,27 @@ h2
   width: 25px;
   height: 21px;
   cursor:default;
+}
+.titleBtnCloseFg
+{
+  -webkit-mask: url('images/title_button_close.png') no-repeat 5px 4px;
+  mask: url('images/title_button_close.png') no-repeat 5px 4px;
+}
+.window[name="mainChat"] > .titleBarBg > .titleBtnCloseBg > .titleBtnCloseFg
+{
+  background-color: var(--titleButtonCloseFgActive);
+}
+.window[name="mainChat"] > .titleBarBg > .titleBtnCloseBg > .titleBtnCloseFg:hover
+{
+  background-color: var(--titleButtonCloseFgActiveOver);
+}
+.window[name="mainMenu"] > .titleBarBg > .titleBtnCloseBg > .titleBtnCloseFg
+{
+  background-color: var(--titleButtonCloseFg);
+}
+.window[name="mainMenu"] > .titleBarBg > .titleBtnCloseBg > .titleBtnCloseFg:hover
+{
+  background-color: var(--titleButtonCloseFgOver);
 }
 .titleShadow
 {
@@ -136,6 +189,7 @@ h2
   height: 40px;
   border-radius: 50%;
   position: relative;
+  float: left;
 }
 .mMenuBtnBg[name="mMenu"]
 {
@@ -153,17 +207,25 @@ h2
   height: 40px;
   position: relative;
   display: inline-block;
-  background-color: var(--menuIconFg);
   cursor: pointer;
+}
+.mMenuBtnFg
+{
+  background-color: var(--menuIconFg);
+}
+.mMenuBtnFg:hover
+{
+  background-color: var(--menuIconFgOver);
 }
 .mMenuBtnFg[name="mMenu"]
 {
   -webkit-mask: url('images/dialogs_menu.png') no-repeat 10px 10px;
   mask: url('images/dialogs_menu.png') no-repeat 10px 10px;
+  background-color: var(--dialogsMenuIconFg);
 }
-.mMenuBtnFg:hover
+.mMenuBtnFg[name="mMenu"]:hover
 {
-  background-color: var(--menuIconFgOver);
+  background-color: var(--dialogsMenuIconFgOver);
 }
 .searchForm
 {
@@ -173,8 +235,9 @@ h2
   height: 32px;
   width: 264px;
   position: relative;
-  top: -32px;
-  left: 54px;
+  left: 13px;
+  top: 7px;
+  float: left;
 }
 .searchBoxBg
 {
@@ -193,6 +256,7 @@ h2
 .searchBoxBg:focus
 {
   border: 2px solid var(--filterInputBorderFg);
+  outline-color: var(--filterInputBorderFg);
   background-color: var(--windowBg);
 }
 .searchBoxBg::-webkit-search-cancel-button
@@ -253,8 +317,7 @@ h2
 .mMenuCoverBg
 {
   position: relative;
-  top: 10px;
-  height: 540px;
+  height: 550px;
   width: 274px;
   background-color: var(--mainMenuCoverBg);
   float: left;
@@ -263,8 +326,10 @@ h2
 {
   float: left;
   width: 274px;
-  height: 400px;
+  height: 397px;
   background-color: var(--mainMenuBg);
+  position: relative;
+  padding-top: 13px;
 }
 .mMenuButton
 {
@@ -319,7 +384,7 @@ h2
   color: var(--windowBoldFg);
   float: left;
 }
-.mMenuButtonText:hover
+.mMenuButton:hover > .mMenuButtonText
 {
   color: var(--windowBoldFgOver);
 }
@@ -419,7 +484,7 @@ h2
 }
 .mMenuAboutFg[name=TDesktop]
 {
-  top: 101px;
+  top: 106px;
   font-family: OpenSans-Semibold;
   font-size: 10pt;
   cursor: pointer;
@@ -435,11 +500,11 @@ h2
   display: inline-block;
   width: 10px;
   left: 35px;
-  top: 104px;
+  top: 110px;
 }
 .mMenuAboutFg[name=Version]
 {
-  top: 104px;
+  top: 110px;
   font-family: OpenSans-Regular;
   font-size: 10pt;
   cursor: pointer;
@@ -453,7 +518,7 @@ h2
   position: relative;
   display: inline-block;
   width: 10px;
-  top: 104px;
+  top: 110px;
   left: 34px;
 }
 .mMenuAboutFg[name=TDesktop]:hover ,
@@ -483,9 +548,9 @@ h2
 }
 .chatTopBg
 {
-  width: 572px;
+  width: 573px;
   height: 54px;
-  background-color: var(--windowBg);
+  background-color: var(--topBarBg);
   position: relative;
   cursor: pointer;
   -webkit-touch-callout: none;
@@ -502,8 +567,8 @@ h2
   height: 1px;
   background-color: var(--shadowFg);
   position: relative;
-  top: 36px;
-  left: 1px;
+  top: 18px;
+  float: left;
 }
 .chatTitleFg
 {
@@ -520,12 +585,14 @@ h2
   user-select: none;
   cursor: pointer;
   color: var(--windowFg);
+  float: left;
+  margin-right: 445px;
 }
 .chatSubTitleFg
 {
-  top: 28px;
+  top: 10px;
   left: 17px;
-  position: absolute;
+  position: relative;
   font-family: OpenSans-Regular;
   font-size: 10pt;
   -webkit-touch-callout: none;
@@ -536,11 +603,13 @@ h2
   user-select: none;
   cursor: pointer;
   color: var(--contactsStatusFg);
+  float: left;
+  margin-right: 17px;
 }
 .chatStateFg
 {
-  top: 28px;
-  left: 78px;
+  top: 10px;
+  left: 17px;
   position: relative;
   font-family: OpenSans-Regular;
   font-size: 10pt;
@@ -552,6 +621,7 @@ h2
   user-select: none;
   cursor: pointer;
   color: var(--contactsStatusFgOnline);
+  float: left;
 }
 .mMenuBtnFg[name="search"]
 {
@@ -566,13 +636,13 @@ h2
 .mMenuBtnBg[name="search"]
 {
   position: absolute;
-  right: 46px;
+  right: 45px;
   top: 7px;
 }
 .mMenuBtnBg[name="options"]
 {
   position: absolute;
-  right: 5px;
+  right: 4px;
   top: 7px;
 }
 .dialogAvatar
@@ -1026,4 +1096,125 @@ h2
 {
     width: 573px;
     height: 61px;
+}
+.composeShadow
+{
+  width: 573px;
+  height: 1px;
+  background-color: var(--shadowFg);
+  position: relative;
+  bottom: 47px;
+  float: left;
+}
+.composeBg
+{
+  float: left;
+  background-color: var(--historyComposeAreaBg);
+  height: 46px;
+  width: 573px;
+  position: relative;
+  bottom: 47px;
+}
+.composeFg
+{
+  color: var(--historyComposeAreaFgService);
+  float: left;
+  position: relative;
+  font-size: 9pt;
+  font-family: OpenSans-Regular;
+  top: 8px;
+  height: 30px;
+  border: none;
+  background-color: var(--historyComposeAreaBg);
+  width: 340px;
+}
+.composeFg:focus
+{
+  color: var(--historyComposeAreaFg);
+  outline: none;
+  float: left;
+}
+.composeBtnBg
+{
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 3px;
+  cursor: pointer;
+}
+.composeBtnBg[name="attach"]
+{
+  float: left;
+  left: 3px;
+  margin-right: 6px;
+}
+.composeBtnFg
+{
+  background-color: var(--historyComposeIconFg);
+  position: relative;
+  width: 40px;
+  height: 40px;
+  float: left;
+  cursor: pointer;
+}
+.composeBtnFg[name="send"]
+{
+  background-color: var(--historySendIconFg);
+  -webkit-mask: url('images/send_control_send.png') no-repeat 8px 8px;
+  mask: url('images/send_control_send.png') no-repeat 8px 8px;
+  float: right;
+  top: 3px;
+  right: 5px;
+  margin-left: 6px;
+}
+.composeBtnFg[name="send"]:hover
+{
+  background-color: var(--historySendIconFgOver);
+}
+.composeBtnBg[name="microphone"]
+{
+  float: right;
+  right: 5px;
+  margin-left: 6px;
+}
+.composeBtnBg[name="emoji"]
+{
+  float: right;
+  right: 5px;
+  margin-left: 6px;
+}
+.composeBtnBg[name="command"]
+{
+  float: right;
+  right: 5px;
+  margin-left: 6px;
+}
+.composeBtnBg[name="command"] > .composeBtnFg
+{
+  -webkit-mask: url('images/send_control_bot_command.png') no-repeat 8px 8px;
+  mask: url('images/send_control_bot_command.png') no-repeat 8px 8px;
+}
+.composeBtnBg[name="emoji"] > .composeBtnFg
+{
+  -webkit-mask: url('images/send_control_emoji.png') no-repeat 9px 9px;
+  mask: url('images/send_control_emoji.png') no-repeat 9px 9px;
+}
+.composeBtnBg[name="microphone"] > .composeBtnFg
+{
+  -webkit-mask: url('images/send_control_record.png') no-repeat 12px 8px;
+  mask: url('images/send_control_record.png') no-repeat 12px 8px;
+}
+.composeBtnBg[name="attach"] > .composeBtnFg
+{
+  -webkit-mask: url('images/send_control_attach.png') no-repeat 8px 8px;
+  mask: url('images/send_control_attach.png') no-repeat 8px 8px;
+}
+.composeBtnBg:hover > .composeBtnFg
+{
+  background-color: var(--historyComposeIconFgOver);
+}
+.composeBtnBg:active
+{
+  background-color: var(--windowBgOver););
 }
