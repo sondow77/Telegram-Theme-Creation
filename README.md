@@ -1,2 +1,3 @@
 # Telegram-Theme-Creation
-Make Telegram Themes with preview, made preview with HTML and CSS, two converters for convert Colors Telegram Theme File to CSS and Theme to CSS
+This is a Telegram Themes preview, it was made with HTML and CSS.
+There are two converters to convert from "Colors Telegram Theme File" to "CSS" and vice versa.
